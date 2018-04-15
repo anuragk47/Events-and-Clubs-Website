@@ -1,0 +1,22 @@
+{
+  "name": "events-and-clubs-website",
+  "version": "1.0.0",
+  "description": "College project",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass main.scss styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuragk47/Events-and-Clubs-Website.git"
+  },
+  "author": "ApoorvArv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anuragk47/Events-and-Clubs-Website/issues"
+  },
+  "homepage": "https://github.com/anuragk47/Events-and-Clubs-Website#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

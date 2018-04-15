@@ -1,0 +1,203 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+}
+.row {
+  max-width: 114rem;
+  margin-top: 4rem;
+  margin-left: 5rem;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+    
+  }
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
+}
+
+.row .col-1-of-2 {
+  width: calc((100% -  6rem)/2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2*6rem)/3);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3*6rem)/4);
+}
+
+.row .col-2-of-3 {
+  width: calc(2*((100% - 2*6rem)/3) + 6rem);
+}
+
+.row .col-3-of-4 {
+  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+
+.navigation {
+  width:100%;
+  background-color:rgb(58,58,58);
+}
+
+.navigation__list {
+  list-style: none;
+  text-align: center;
+  display:inline-block;
+}
+
+.navigation__item {
+  display:inline-block;
+  padding: 1.5rem;
+  margin-left: 4rem; 
+}
+
+.navigation__link {
+  text-decoration:none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.navigation__link:hover {
+  background-color: rgb(76,74,83);
+}
+
+
+
+.flip3D {
+  
+  width:300px;
+  height: 200px;
+  margin:10px;
+  float:left;
+  box-shadow:-1rem 1rem 2rem rgba(0,0,0,0.15);
+  border-radius: 10px;
+}
+
+.flip3D > .front {
+  position: absolute;
+  -webkit-transform: perspective( 600px) rotateY(0deg);
+  transform: perspective( 600px) rotateY(0deg);
+
+  width:300px;
+  height:200px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -webkit-transition: transform 0.5s linear 0s;
+  transition: transform 0.5s linear 0s;
+  
+}
+
+
+.text {
+
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-weight:900;
+  color:white;
+  font-size:1.8rem;
+  text-align:center;
+
+}
+
+span {
+  display: inline-block;
+
+}
+
+.ct {
+
+  background-image: linear-gradient(to right bottom, rgba(161,103,204, 0.7), rgba(161,103,204, 0.7)),url(img/AdobeStock_102913842.jpeg);
+  background-size:cover;
+
+}
+
+.loop {
+  background-image: linear-gradient(to right bottom, rgba(69,92,109, 0.7), rgba(69,92,109, 0.7)),url(img/1_5TRuG7tG0KrZJXKoFtHlSg.jpeg);
+  background-size:cover;
+}
+
+.cam {
+
+  background-image: linear-gradient(to right bottom, rgba(69,204,192, 0.7), rgba(69,204,192, 0.7)),url(img/images.jpg);
+  background-size:cover;
+
+}
+
+.dance {
+  background-image: linear-gradient(to right bottom, rgba(31,79,97, 0.7), rgba(31,79,97, 0.7)),url(img/20130402_expressionsevolution_ericshi_6954.jpg);
+  background-size:cover;
+}
+
+.lingo {
+
+  background-image: linear-gradient(to right bottom, rgba(136,92,61, 0.7), rgba(136,92,61, 0.7)),url(img/open-book-library-education-read-159621.jpeg);
+  background-size:cover;
+
+}
+
+.marketing {
+  background-image: linear-gradient(to right bottom, rgba(248,178,97, 0.7), rgba(248,178,97, 0.7)),url(img/687474703a2f2f692e696d6775722e636f6d2f506c36426553462e6a7067.jpg);
+  background-size:cover;
+}
+
+.enthiran {
+  background-image: linear-gradient(to right bottom, rgba(201,55,56, 0.7), rgba(201,55,56, 0.7)),url(img/high-performance-marketing-teams.jpg);
+  background-size:cover;
+}
+
+.chitrashala {
+  background-image: linear-gradient(to right bottom, rgba(219,131,193, 0.7), rgba(219,131,193, 0.7)),url(img/Shades-of-pink-Wall.jpg);
+  background-size:cover;
+}
+
+.frag {
+  background-image: linear-gradient(to right bottom, rgba(1,100,48, 0.7), rgba(1,100,48, 0.7)),url(img/best-android-apps-2.jpg);
+  background-size:cover;
+}
